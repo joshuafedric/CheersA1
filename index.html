@@ -37,10 +37,10 @@
       var(--navy-deep);
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
-    padding:44px 40px;
-    overflow-x:hidden;
-    overflow-y:auto;
+    justify-content:center;
+    gap:clamp(20px, 4vh, 44px);
+    padding:clamp(24px, 5vh, 44px) 40px;
+    overflow:hidden;
   }
 
   .brand-panel .blob{
@@ -72,20 +72,20 @@
   .logo-row{
     display:inline-flex;
     align-items:center;
-    margin-bottom:56px;
+    margin-bottom:clamp(20px, 4vh, 56px);
   }
   .logo-row svg{
-    height:34px;
+    height:clamp(26px, 4vh, 34px);
     width:auto;
     display:block;
   }
 
   .brand-title{
-    font-size:clamp(38px,4.4vw,58px);
+    font-size:clamp(30px, 5vh, 58px);
     font-weight:800;
     line-height:1.05;
     color:#ffffff;
-    margin:0 0 18px;
+    margin:0 0 clamp(10px, 2vh, 18px);
     letter-spacing:-0.02em;
   }
   .brand-title span{
@@ -93,11 +93,11 @@
   }
 
   .brand-sub{
-    font-size:16px;
+    font-size:clamp(13px, 1.8vh, 16px);
     color:#c3d1ee;
     max-width:340px;
-    line-height:1.55;
-    margin:0 0 34px;
+    line-height:1.5;
+    margin:0;
   }
 
   .brand-footer{
@@ -289,12 +289,11 @@
     .layout{ flex-direction:column; }
     .brand-panel{
       flex:0 0 auto;
-      padding:32px 28px;
+      padding:28px;
+      justify-content:flex-start;
+      gap:20px;
     }
-    .logo-row{ margin-bottom:28px; }
     .brand-title{ font-size:clamp(30px,7vw,42px); }
-    .brand-sub{ margin-bottom:22px; }
-    .brand-footer{ margin-top:24px; }
     .stage-panel{ padding:32px 16px 40px; }
     .stage{ width:min(92vw, 460px); }
   }
